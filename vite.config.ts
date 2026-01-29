@@ -46,7 +46,7 @@ const DEFAULT_OPTIONS = {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "./",
   plugins: [
     react(),
     tailwindcss(),
