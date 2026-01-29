@@ -46,21 +46,13 @@ const DEFAULT_OPTIONS = {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/",
   plugins: [
     react(),
     tailwindcss(),
     svgr(),
     ViteImageOptimizer(DEFAULT_OPTIONS),
   ],
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://api.dev.krav.in",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
