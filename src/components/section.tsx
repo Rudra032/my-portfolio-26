@@ -4,6 +4,7 @@ interface Props {
   id: string;
   title: string;
   children?: React.ReactNode;
+  subtitle?: string;
 }
 
 export default function Section({ id, title, children }: Props) {

@@ -1,15 +1,17 @@
 import Section from "@/components/section";
-import { motion } from "framer-motion";
+import { motion, type MotionProps } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
-const hoverEffect = {
+const hoverEffect: MotionProps = {
   whileHover: {
     y: -6,
     scale: 1.03,
-    transition: { type: "spring", stiffness: 300 },
+    transition: {
+      type: "spring",
+      stiffness: 300,
+    },
   },
 };
-
 export default function About() {
   return (
     <Section id="about" title="About Me">

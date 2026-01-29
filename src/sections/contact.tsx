@@ -1,5 +1,5 @@
 import Section from "@/components/section";
-import { motion } from "framer-motion";
+import { motion, type Transition } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, Linkedin } from "lucide-react";
 
@@ -7,7 +7,7 @@ const hoverEffect = {
   whileHover: {
     y: -6,
     scale: 1.03,
-    transition: { type: "spring", stiffness: 300 },
+    transition: { type: "spring" as const, stiffness: 300 } as Transition,
   },
 };
 

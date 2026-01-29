@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import AnimatedBackground from "@/components/animated-bg";
-import { Download, Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
